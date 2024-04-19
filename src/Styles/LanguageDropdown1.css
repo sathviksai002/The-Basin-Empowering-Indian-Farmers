@@ -1,0 +1,57 @@
+.weather-input-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .weather-input-container h2 {
+    margin-bottom: 20px;
+    font-size: 29px;
+  }
+
+  .weather-input-container label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .weather-input-container p {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+    margin: 20px;
+  }
+
+  .select-time {
+    margin-top: 10px;
+  }
+
+  .location-name{
+    margin-top: 10px;
+    font-size: 20px;
+    color : #9D2553;
+  }
+
+  .preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.preloader img {
+    width: 200px; /* Increase the size of the loader image */
+    height: auto;
+}
+
+.preloader p {
+  margin-top: 10px; /* Adjust the spacing between the image and text */
+  font-size: 16px; /* Adjust the font size */
+  color: #333; /* Adjust the text color */
+}

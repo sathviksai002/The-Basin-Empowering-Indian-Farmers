@@ -1,0 +1,111 @@
+
+.container-contact-form {
+    background: linear-gradient(to bottom right, #2c3e50, #1c2833);
+    width: 500px; 
+    height: auto;
+    margin: 0 auto;
+    padding: 40px; 
+    background-color: #f9f9f9;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+}
+
+.container-contact-form.show {
+    display: block; 
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn::before,
+.close-btn::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.close-btn::before {
+    transform: rotate(45deg);
+}
+
+.close-btn::after {
+    transform: rotate(-45deg);
+}
+
+.close-btn:hover::before,
+.close-btn:hover::after {
+    background-color: red;
+}
+
+.contact-form .form-group {
+    margin-bottom: 40px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #cacaca;
+    border-radius: 15px;
+}
+
+.contact-form .submit-button {
+    padding: 14px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.contact-form .submit-button:hover {
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    border: 5px solid #2f2f2f;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}

@@ -6,6 +6,18 @@
     height : 80px;
     background-color: white;
 }
+.sticky{
+    position: fixed;
+    top : 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow:  0 22px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-section.sticky {
+    background-color: white; /* Change background color when sticky */
+}
+
 .hash {
     color: #2e5b1a;
     font-family: Cambria, sans-serif;
@@ -132,6 +144,10 @@
 .open-nav {
     left: 0;
 }
+
+/* .hamb-icon{
+    display: none;
+} */
 .mobile-navbar-links {
     list-style-type: none;
     display: flex;

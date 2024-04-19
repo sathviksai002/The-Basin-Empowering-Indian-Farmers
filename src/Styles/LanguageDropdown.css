@@ -1,0 +1,25 @@
+.whole-container{
+    background: linear-gradient(to left, rgb(177, 232, 177), rgb(27, 116, 27));
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.en-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  }
+
+  .en-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+
+

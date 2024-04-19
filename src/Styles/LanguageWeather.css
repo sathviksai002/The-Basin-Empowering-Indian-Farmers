@@ -1,0 +1,23 @@
+.container{
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+select{
+    padding: 10px;
+    font-size: 18px;
+    border: 4px solid #ccc;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    outline: transparent;
+}
+
+select:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  }
+
+  option {
+    padding: 10px;
+  }

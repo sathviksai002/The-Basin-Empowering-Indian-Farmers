@@ -1,0 +1,12 @@
+.map-container{
+    height : 400px;
+    width : 100%;
+}
+
+.marker{
+    background-color: #ff0000;
+    color : #ffffff;
+    padding : 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+}

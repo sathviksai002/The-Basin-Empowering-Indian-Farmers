@@ -1,0 +1,24 @@
+.audio-container {
+    margin-top: 10px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    padding: 14px;
+  }
+  .audio-text {
+    color: #333;
+    font-size: 30px;
+    font-weight: bold; /* Optionally, make the text bold */
+    margin-bottom: 10px;
+  }
+  
+  /* Audio element styles */
+  audio {
+    width: 50%;
+  }
+  
+  /* Audio source element styles */
+  source {
+    display: flex;
+    width: 50%;
+  }

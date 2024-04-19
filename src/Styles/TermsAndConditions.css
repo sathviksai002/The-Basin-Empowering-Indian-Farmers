@@ -1,0 +1,65 @@
+.terms-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+/* Existing styles */
+
+.subtitle {
+    color: #555;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ordered-list {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.inner-ordered-list {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+/* New styles for the added content */
+.paragraph {
+    color: #666;
+    margin-bottom: 10px;
+}
+

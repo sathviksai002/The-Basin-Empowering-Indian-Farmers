@@ -1,37 +1,81 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import { faAngleUp, faTemperature0 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Styles/Hero.css"
+import { useNavigate  } from "react-router-dom";
+import Farmer from "../Assets/Farmer.png"
+import { useTranslation } from 'react-i18next';
+
 
 function Hero() {
+    const navigate = useNavigate();
+    const [goUp, setGoUp] = useState(false);
+    const { t } = useTranslation();
+
+    const FindWeather = () => {
+        navigate("/WeatherInput");
+      };
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+      useEffect(() => {
+        const onPageScroll = () => {
+          if (window.scrollY > 600) {
+            setGoUp(true);
+          } else {
+            setGoUp(false);
+          }
+        };
+        window.addEventListener("scroll", onPageScroll);
+        return () => {
+            window.removeEventListener("scroll", onPageScroll);
+          };
+        }, []);
   return (
     <div className="section-container">
         <div className="hero-section">
             <div className="text-section">
-                <p className="text-headline">🌱 Jai Jawan ! Jai Kisan ! 🌱</p>
+                <p className="text-headline">🌱 {t('hero.headline')} 🌱</p>
                 <p className="text-description">
-                Welcome to 'The Basin'—where we celebrate Indian farmers and the farming world's beauty. 
-                Explore trends in APMC, government schemes, and personalized weather forecasts. Access 
-                insightful articles to nurture farm success. Join us in sowing seeds for a brighter future!
+                {t('hero.description')}
                 </p>
+                <button
+            className="text-appointment-btn"
+            type="button"
+            onClick={FindWeather}
+            
+          >
+            <FontAwesomeIcon icon={faTemperature0} /> {t('hero.weatherButton')}
+          </button>
 
             <div className="text-stats">
                 <div className="text-stats-container">
                     <p>30+</p>
-                    <p>Yojnas</p>
+                    <p>{t('hero.yojnas')}</p>
                 </div>
                 <div className="text-stats-container">
                     <p>500+</p>
-                    <p>Wholesale Regulated Markets(APMC)</p>
+                    <p>{t('hero.apmc')}</p>
                 </div>
                 <div className="text-stats-container">
                     <p>50+</p>
-                    <p>Articles on Farming</p>
+                    <p>{t('hero.articles')}</p>
                 </div>
             </div>
             </div>
-
+            <div className="hero-image-section">
+            <img src={Farmer} alt="Farmer" className="hero-image1" />
         </div>
+        </div>
+        <div
+        onClick={scrollToTop}
+        className={`scroll-up ${goUp ? "show-scroll" : ""}`}
+      >
+        <FontAwesomeIcon icon={faAngleUp} />
+      </div>
     </div>
-  )
+  );
 }
 
 export default Hero

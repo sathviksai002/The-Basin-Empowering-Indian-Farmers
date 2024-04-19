@@ -1,0 +1,131 @@
+.info_section{
+    padding: 0 32px;
+    text-align: center;
+    background-color: white;
+}
+
+.info-title-content{
+    margin: 74px 0 129px 0;
+}
+
+.info-title{
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info-title > span {
+    position: relative;
+}
+
+.info-title span::before {
+    content: '';
+    position: absolute;
+    width: 78%;
+    height: 6px;
+    background-color: #9D2553;
+    border-radius: 15px;
+    left: 0;
+    bottom: -12px;
+}
+
+.yojna-btn {
+    padding: 14px 20px;
+    margin-top: -20px;
+    width: 50%;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #2e5b1a;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.yojna-btn:hover {
+    color: black;
+    background-color: transparent;
+    font-size: 18px;
+    border: 1px solid #2f2f2f;
+}
+
+.info-description{
+    margin: 74px;
+    text-align: center;
+    justify-content: center;
+    color : rgb(0, 0, 0);
+    font-family: 'Rubik',sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+}
+
+.info-cards-content{
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 35px;
+}
+
+.info-cards{
+    height : auto;
+    border : 3px solid #2e5b1a;
+    border-radius: 14px;
+    background-color: white;
+    position: relative;
+}
+
+.info-card-title{
+    margin: 32px 0 40px 0;
+    color : black;
+    font-family: 'Poppins',sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.info-card-description{
+    margin: 24px;
+    color : rgb(65, 22, 22);
+    font-family: 'Rubik',sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    line-height: 1.5rem;
+}
+
+
+.info-card-icon{
+    position: absolute;
+    top : -24px;
+    left : 47%;
+    padding:10px;
+    background-color: #DCE6FF;
+    border-radius: 32px;
+}
+
+
+.info-fa-icon {
+    color: #2e5b1a;
+    font-size: 24px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .info-description {
+        margin: 64px 32px;
+    }
+    .info-cards-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 700px) {
+    .info-description {
+        margin: 64px 8px;
+    }
+    .info-cards-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

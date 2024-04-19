@@ -1,6 +1,6 @@
 .hero-section {
     padding: 40px;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -16,7 +16,7 @@
     margin-bottom: 12px;
     color: rgb(0, 0, 0);
     font-family: 'Rubik', sans-serif;
-    font-size: 27px;
+    font-size: 33px;
     font-weight: bold;
     letter-spacing: .7px;
 }
@@ -26,9 +26,30 @@
     margin: 32px 0;
     color: rgb(0, 0, 0);
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-size: 21px;
     letter-spacing: .7px;
     line-height: 1.6rem;
+}
+
+.text-appointment-btn {
+    padding: 14px 100px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #2f2f2f;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.text-appointment-btn:hover {
+    color: black;
+    background-color: transparent;
+    font-size: 18px;
+    border: 1px solid #2f2f2f;
 }
 
 .text-stats {
@@ -56,4 +77,75 @@
     font-family: 'Rubik', sans-serif;
     font-size: 32px;
     font-weight: bold;
+}
+
+.hero-image-section {
+    width: 75%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.hero-image1 {
+    width: 100%;
+    height: auto;
+}
+
+.scroll-up{
+    width: 45px;
+    height: 45px;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color : white;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: #2f2f2f;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.show-scroll {
+    display: flex;
+  }
+
+  @media screen and (max-width: 900px) {
+    .hero-image-section {
+        display: none;
+    }
+    .text-section {
+        width: 100%;
+        padding: 0;
+    }
+    .text-title, .text-descritpion {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .text-headline {
+        font-size: 20px;
+    }
+    .text-title {
+        font-size: 28px;
+    }
+    .text-description {
+        font-size: 16px;
+    }
+    .text-stats {
+        gap: 18px;
+    }
+    .text-stats-container > p {
+        font-size: 16px;
+    }
+    .text-stats-container p:first-child {
+        font-size: 22px;
+    }
+    .scroll-up {
+        bottom: 32px;
+        right: 32px;
+    }
 }
