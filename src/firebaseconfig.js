@@ -4,19 +4,19 @@ import { getStorage, ref, listAll, getDownloadURL, get } from 'firebase/storage'
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyDUErxpBPYhZvX_jVx1s08rt2a8aQmy-cI",
+    apiKey: "",
   
-    authDomain: "schemes-20bbb.firebaseapp.com",
+    authDomain: "",
   
-    databaseURL: "https://schemes-20bbb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    databaseURL: "",
   
-    projectId: "schemes-20bbb",
+    projectId: "",
   
-    storageBucket: "schemes-20bbb.appspot.com",
+    storageBucket: "",
   
-    messagingSenderId: "876494989644",
+    messagingSenderId: "",
   
-    appId: "1:876494989644:web:8dbcb6806b4923888c47e9"
+    appId: ""
   
   };
 
